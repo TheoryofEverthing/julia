@@ -1503,6 +1503,8 @@ function bkfact!(A::StridedMatrix, uplo::Symbol, symmetric::Bool = issymmetric(A
     return bkfact!(symmetric ? Symmetric(A, uplo) : Hermitian(A, uplo), rook)
 end
 
+@deprecate fieldnames(v) fieldnames(typeof(v))
+
 # END 0.7 deprecations
 
 # BEGIN 1.0 deprecations

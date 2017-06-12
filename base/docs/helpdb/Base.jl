@@ -1537,9 +1537,9 @@ Seek a stream to its beginning.
 seekstart
 
 """
-    nfields(x::DataType) -> Int
+    nfields(x) -> Int
 
-Get the number of fields of a `DataType`.
+Get the number of fields in the given object.
 """
 nfields
 
